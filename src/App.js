@@ -5,6 +5,7 @@ import GlobalStyles from './styles/GlobalStyles';
 import { dark } from './styles/Themes';
 
 import { AnimatePresence } from 'framer-motion';
+
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css'; // el base
 
