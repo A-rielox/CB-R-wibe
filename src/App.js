@@ -22,7 +22,7 @@ import Footer from './sections/Footer';
 44.50 navbar
 1.02.37 about
 1.20.00 shop
-1.36.30
+1.54.30 banner
 
 
 */

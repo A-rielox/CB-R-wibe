@@ -30,6 +30,10 @@ const Product = ({ img, title = '' }) => {
       </Item>
    );
 };
+// viewport: ViewportOptions
+// An object of viewport options that define how the viewport is detected.
+// amount: "some" | "all" | number
+// Defaults to "some", this option defines the amount of the element that has to intersect with the viewport in order for it to be considered within view.
 
 const Shop = () => {
    gsap.registerPlugin(ScrollTrigger);
@@ -54,14 +58,16 @@ const Shop = () => {
             scrollTrigger: {
                trigger: element,
                start: 'top top',
-               end: pinWrapWidth,
-               scroller: '.App', // locomotive element
+               end: pinWrapWidth, // 🥝
+               scroller: '.App', // locomotive element ( el q tiene la clase App en App.js )
                scrub: true,
                pin: true,
                // markers:true,
             },
-            // we have to increase scrolling height of this section same as the scrolling element width. INCREMENTA LA ALTURA AL ANCHO DEL CONTENEDOR DE IMAGENES
-            // height: `${scrollingElement.scrollWidth}px`,
+            // 🥝 este es el q incrementa la altura y el padding de la sección
+            // el proxy quita el espacio q hay abajo y lo pone hacia el lado (creo), y con el timeline de abajo se hace q se mueva hacia el lado.
+            // we have to increase scrolling height of this section same as the scrolling element width.
+            height: `${scrollingElement.scrollWidth}px`,
             ease: 'none,',
          });
 
@@ -76,10 +82,10 @@ const Shop = () => {
 
                // markers:true,
             },
-            // we have to increase scrolling height of this section same as the scrolling element width
             x: -pinWrapWidth,
             ease: 'none,',
          });
+
          ScrollTrigger.refresh();
       }, 1000);
 
@@ -232,6 +238,7 @@ const Item = styled(motion.div)`
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
    img {
       width: 100%;
       height: auto;
