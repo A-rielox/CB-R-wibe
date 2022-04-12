@@ -23,6 +23,8 @@ import Footer from './sections/Footer';
 1.02.37 about
 1.20.00 shop
 1.54.30 banner
+2.03.20 new arrival
+2.24.30 footer
 
 
 */
