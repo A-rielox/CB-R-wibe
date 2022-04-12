@@ -131,7 +131,7 @@ const MenuItems = styled(motion.ul)`
 
 const MenuBtn = styled.li`
    background-color: ${props => `rgba(${props.theme.textRgba}, 0.7)`};
-   list-style-type: style none;
+   list-style-type: style none; // The list-style-type specifies the type of list-item marker in a list.
    color: ${props => props.theme.body};
    width: 15rem;
    height: 2.5rem;
@@ -139,7 +139,6 @@ const MenuBtn = styled.li`
    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
 
    position: absolute;
-
    // hasta abajo de la q es relative, q es la MenuItems ( la navBar )
    top: 100%;
    left: 50%;

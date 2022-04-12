@@ -8,6 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css'; // el base
+import ScrollTriggerProxy from './components/ScrollTriggerProxy';
 
 import Home from './sections/Home';
 import About from './sections/About';
@@ -19,6 +20,10 @@ import Footer from './sections/Footer';
 /* 
 
 44.50 navbar
+1.02.37 about
+1.20.00 shop
+1.36.30
+
 
 */
 
@@ -43,6 +48,7 @@ function App() {
                containerRef={containerRef}
             >
                <AnimatePresence>
+                  <ScrollTriggerProxy />
                   <main
                      className="App"
                      data-scroll-container
@@ -63,3 +69,5 @@ function App() {
 }
 
 export default App;
+
+// gsap.fromTo(el, {este es para el "from"}, {este para el "to"})
