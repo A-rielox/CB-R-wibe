@@ -126,7 +126,7 @@ const Section = styled.section`
 
    position: relative;
 
-   background-color: yellow;
+   /* background-color: yellow; */
 `;
 
 const Overlay = styled.div`

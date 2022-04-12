@@ -7,7 +7,7 @@ import NavBar from '../components/NavBar';
 
 const Home = () => {
    return (
-      <Section>
+      <Section id="home">
          <CoverVideo />
          <Logo />
          <NavBar />

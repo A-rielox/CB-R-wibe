@@ -164,6 +164,7 @@ const MenuItem = styled(motion.div)`
    text-transform: uppercase;
    color: ${props => props.theme.text};
    cursor: pointer;
+
    @media (max-width: 40em) {
       flex-direction: column;
       padding: 0.5rem 0;

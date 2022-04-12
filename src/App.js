@@ -25,7 +25,7 @@ import Footer from './sections/Footer';
 1.54.30 banner
 2.03.20 new arrival
 2.24.30 footer
-
+2.46.00 pantalla carga
 
 */
 
