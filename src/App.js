@@ -20,6 +20,7 @@ import Loader from './components/Loader';
 
 /* 
 
+32.00 logo
 44.50 navbar
 1.02.37 about
 1.20.00 shop
